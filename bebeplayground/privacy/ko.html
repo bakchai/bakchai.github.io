@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 | 베베놀이터</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">베베놀이터</p>
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: <time datetime="2026-10-14">2026년 10월 14일</time></p>
+    <nav class="langs" aria-label="언어 선택">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko" aria-current="page">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">이 앱은 어린아이를 위한 소리 놀이 앱입니다. 아이와 가족의 개인정보를 소중히 여기며, 이 방침은 앱이 어떤 정보를 다루는지 설명합니다.</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. 수집하는 개인정보</h2>
+    <ul>
+      <li>앱은 이름, 연락처, 위치, 사진, 음성 등 어떠한 개인정보도 수집하지 않으며, 개발자의 서버로 데이터를 전송하지 않습니다.</li>
+      <li>회원가입과 로그인이 없고, 분석(통계) 도구를 사용하지 않습니다.</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. 기기에 저장되는 정보</h2>
+    <p>이름 표시 언어, 영어 이름 함께 보기, 음성 읽어주기, 효과음 음량, 부모 잠금 방식 같은 설정은 이 기기에만 저장되며, 앱을 삭제하면 함께 삭제됩니다.</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. 콘텐츠</h2>
+    <p>사진, 영상, 소리 콘텐츠는 앱에 포함되어 있거나 Google Play를 통해 다운로드되어 기기에 저장됩니다. 다운로드는 Google Play가 처리하며, 개발자는 별도의 콘텐츠 서버를 운영하지 않습니다.</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. 이름 읽어주기(음성 합성)</h2>
+    <p>이름을 소리로 읽어 줄 때 앱은 기기에 설치된 음성 합성(TTS) 엔진을 사용합니다. 앱은 읽을 이름만 그 엔진에 전달하며, 음성 데이터를 녹음하거나 저장하거나 전송하지 않습니다.</p>
+    <p>음성 합성 엔진은 기기 또는 엔진 제공자가 제공하며, 엔진의 동작에는 해당 제공자의 방침이 적용됩니다.</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. 광고</h2>
+    <p>앱은 홈 화면 하단과 상세 보기 화면 하단(세로 화면일 때)에만 Google AdMob 배너 광고를 표시합니다.</p>
+    <ul>
+      <li>모든 광고 요청은 아동 대상 처리(TFCD)로 표시되고, 최대 광고 콘텐츠 등급은 G(모든 연령)로 제한되며, 비맞춤형 광고만 표시됩니다.</li>
+      <li>앱은 광고 ID(AD_ID) 권한을 제거하여 광고 ID를 사용하지 않습니다.</li>
+    </ul>
+    <p>다만 Google AdMob은 광고 제공과 부정 행위 방지를 위해 IP 주소 등 기기 정보를 처리할 수 있습니다.</p>
+    <p>자세한 내용은 Google 개인정보처리방침(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>)과 Google 서비스를 사용하는 사이트 또는 앱의 정보 사용 방식(<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>)을 참고해 주세요.</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. 광고 제거 구매</h2>
+    <p>광고는 보호자 확인을 거쳐야 열리는 설정 화면에서 한 번의 인앱 구매로 제거할 수 있습니다.</p>
+    <ul>
+      <li>결제는 Google Play 결제 시스템이 처리하며, 개발자는 카드 번호 등 결제 정보를 받지 않습니다.</li>
+      <li>앱은 Google Play에 구매 여부를 확인하고 그 결과(광고 제거 구매 여부)만 이 기기에 저장하여, 오프라인에서도 광고가 표시되지 않게 합니다.</li>
+    </ul>
+    <p>Google Play의 결제 정보 처리에는 Google 개인정보처리방침(<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>)이 적용됩니다.</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. 아동의 개인정보</h2>
+    <p>앱은 어린아이를 주 대상으로 하며, 아동으로부터 개인정보를 수집하지 않습니다. 설정 같은 보호자용 기능은 보호자 확인을 거친 뒤에만 열립니다.</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. 문의</h2>
+    <p>개인정보 관련 문의는 Google Play 스토어의 앱 상세 페이지에 있는 개발자 연락처(이메일)로 보내 주세요.</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. 방침의 변경</h2>
+    <p>이 방침이 바뀌면 앱 업데이트를 통해 변경된 내용을 제공합니다.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>앱</dt><dd>베베놀이터 (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>개발자 웹사이트</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>연락처 이메일</dt><dd>
+      <!-- TODO: 연락처 이메일 -->
+      <mark>[연락처 이메일]</mark>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>

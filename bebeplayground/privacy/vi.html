@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư | Sân Chơi Bebe</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">Sân Chơi Bebe</p>
+    <h1>Chính sách quyền riêng tư</h1>
+    <p class="date">Ngày hiệu lực: <time datetime="2026-10-14">14 tháng 10 năm 2026</time></p>
+    <nav class="langs" aria-label="Ngôn ngữ">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">Đây là ứng dụng vui chơi với âm thanh dành cho trẻ nhỏ. Chúng tôi coi trọng quyền riêng tư của trẻ em và gia đình. Chính sách này giải thích ứng dụng xử lý những thông tin nào.</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. Thông tin cá nhân chúng tôi thu thập</h2>
+    <ul>
+      <li>Ứng dụng không thu thập bất kỳ thông tin cá nhân nào, chẳng hạn như tên, thông tin liên hệ, vị trí, ảnh hoặc bản ghi âm giọng nói, và không gửi bất kỳ dữ liệu nào đến máy chủ của chúng tôi.</li>
+      <li>Ứng dụng không có tài khoản và không cần đăng nhập.</li>
+      <li>Ứng dụng không sử dụng công cụ phân tích.</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. Thông tin được lưu trên thiết bị này</h2>
+    <p>Các cài đặt như ngôn ngữ hiển thị tên, hiện cả tên tiếng Anh, đọc tên thành tiếng, âm lượng hiệu ứng âm thanh và kiểu khóa phụ huynh chỉ được lưu trên thiết bị này. Các cài đặt này sẽ bị xóa khi bạn gỡ cài đặt ứng dụng.</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. Nội dung</h2>
+    <p>Ảnh, video và âm thanh hoặc có sẵn trong ứng dụng, hoặc được tải xuống qua Google Play và lưu trên thiết bị này. Việc tải xuống do Google Play xử lý; chúng tôi không vận hành máy chủ nội dung riêng.</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. Đọc tên thành tiếng (chuyển văn bản thành giọng nói)</h2>
+    <p>Để đọc tên thành tiếng, ứng dụng sử dụng công cụ chuyển văn bản thành giọng nói (TTS) được cài đặt trên thiết bị này. Ứng dụng chỉ truyền những tên cần đọc tới công cụ đó; ứng dụng không ghi âm, lưu trữ hay gửi bất kỳ dữ liệu giọng nói nào.</p>
+    <p>Công cụ TTS do thiết bị của bạn hoặc nhà phát triển công cụ đó cung cấp, và hoạt động của công cụ tuân theo chính sách riêng của bên cung cấp.</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. Quảng cáo</h2>
+    <p>Ứng dụng chỉ hiển thị quảng cáo biểu ngữ của Google AdMob ở cuối màn hình chính và cuối màn hình xem chi tiết (khi màn hình ở hướng dọc).</p>
+    <ul>
+      <li>Mọi yêu cầu quảng cáo đều được gắn thẻ xử lý hướng đến trẻ em (TFCD), mức phân loại nội dung quảng cáo tối đa được đặt là G (dành cho mọi đối tượng) và chỉ quảng cáo không được cá nhân hóa mới được hiển thị.</li>
+      <li>Ứng dụng đã loại bỏ quyền sử dụng mã nhận dạng quảng cáo (AD_ID) và không sử dụng mã nhận dạng quảng cáo.</li>
+    </ul>
+    <p>Tuy vậy, Google AdMob vẫn có thể xử lý thông tin thiết bị, chẳng hạn như địa chỉ IP, để phân phát quảng cáo và ngăn chặn gian lận.</p>
+    <p>Để biết thêm chi tiết, vui lòng xem Chính sách quyền riêng tư của Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) và cách Google sử dụng thông tin từ các trang web hoặc ứng dụng sử dụng dịch vụ của Google (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>).</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. Mua tính năng xóa quảng cáo</h2>
+    <p>Bạn có thể xóa quảng cáo bằng một lần mua hàng trong ứng dụng tại phần cài đặt, phần này chỉ mở được sau bước xác nhận phụ huynh.</p>
+    <ul>
+      <li>Việc thanh toán do hệ thống thanh toán của Google Play xử lý; chúng tôi không nhận thông tin thanh toán của bạn, chẳng hạn như số thẻ.</li>
+      <li>Ứng dụng hỏi Google Play xem giao dịch mua đã được thực hiện hay chưa và chỉ lưu kết quả đó (đã xóa quảng cáo hay chưa) trên thiết bị này, để quảng cáo không hiển thị ngay cả khi không có kết nối mạng.</li>
+    </ul>
+    <p>Chính sách quyền riêng tư của Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) áp dụng cho cách Google Play xử lý thông tin thanh toán của bạn.</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. Trẻ em</h2>
+    <p>Ứng dụng được thiết kế cho trẻ nhỏ và không cố ý thu thập thông tin cá nhân từ trẻ em. Các tính năng dành cho người lớn như cài đặt chỉ mở được sau bước xác nhận phụ huynh.</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. Liên hệ</h2>
+    <p>Nếu có câu hỏi về quyền riêng tư, vui lòng liên hệ nhà phát triển qua thông tin liên hệ (email) hiển thị trên trang của ứng dụng trong Cửa hàng Google Play.</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. Thay đổi đối với chính sách này</h2>
+    <p>Nếu chính sách này thay đổi, chính sách đã cập nhật sẽ được cung cấp thông qua bản cập nhật ứng dụng.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>Ứng dụng</dt><dd>Sân Chơi Bebe (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>Trang web của nhà phát triển</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>Email liên hệ</dt><dd>
+      <!-- TODO: 연락처 이메일 -->
+      <mark>[email liên hệ]</mark>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>

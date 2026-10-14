@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy | Bebe Playground</title>
+<script>
+// 브라우저 언어(navigator.languages)에 맞는 페이지로 바로 이동한다.
+// 쿠키·저장소·외부 요청은 쓰지 않는다. 맞는 언어가 없거나 스크립트가 꺼져 있으면 아래 목록에서 고른다.
+(function () {
+  var pages = { ko: "ko.html", en: "en.html", ja: "ja.html", id: "id.html", "in": "id.html", vi: "vi.html" };
+  // 주소가 이미 언어 페이지면 이동하지 않는다. 서버가 없는 언어 파일 대신 이 페이지를 돌려줘도 되풀이 이동이 생기지 않게.
+  if (/\/(ko|en|ja|id|vi)\.html$/i.test(location.pathname)) return;
+  var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+  for (var i = 0; i < list.length; i++) {
+    var code = String(list[i] || "").toLowerCase().split(/[-_]/)[0];
+    if (Object.prototype.hasOwnProperty.call(pages, code)) {
+      location.replace(pages[code]);
+      return;
+    }
+  }
+})();
+</script>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+.lead { margin: 0; }
+.choices { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+.choices a {
+  display: block;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+.choices a:hover { border-color: var(--accent); }
+.choices strong { display: block; color: var(--link); font-size: 1.15rem; line-height: 1.5; }
+.choices span { display: block; color: var(--muted); }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">Bebe Playground</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">Choose a language.</p>
+  </div>
+</header>
+<main class="wrap">
+  <ul class="choices">
+    <li><a href="ko.html" hreflang="ko" lang="ko"><strong>한국어</strong><span>베베놀이터 · 개인정보처리방침</span></a></li>
+    <li><a href="en.html" hreflang="en" lang="en"><strong>English</strong><span>Bebe Playground · Privacy policy</span></a></li>
+    <li><a href="ja.html" hreflang="ja" lang="ja"><strong>日本語</strong><span>ベベのあそびば · プライバシーポリシー</span></a></li>
+    <li><a href="id.html" hreflang="id" lang="id"><strong>Bahasa Indonesia</strong><span>Taman Bermain Bebe · Kebijakan privasi</span></a></li>
+    <li><a href="vi.html" hreflang="vi" lang="vi"><strong>Tiếng Việt</strong><span>Sân Chơi Bebe · Chính sách quyền riêng tư</span></a></li>
+  </ul>
+</main>
+</body>
+</html>
