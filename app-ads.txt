@@ -1,5 +1,4 @@
 # app-ads.txt for bakchai.com (Bebe Playground, com.bakchai.bebeplayground)
-# Before uploading, replace pub-0000000000000000 below with your own AdMob
-# publisher ID (AdMob > Settings > Account information > Publisher ID).
-# Keep the rest of the line unchanged. Serve this file at https://bakchai.com/app-ads.txt
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+# AdMob publisher ID: pub-6645150207410383 (AdMob > Settings > Account information > Publisher ID).
+# Served at https://bakchai.com/app-ads.txt
+google.com, pub-6645150207410383, DIRECT, f08c47fec0942fa0
