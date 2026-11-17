@@ -8,12 +8,21 @@
 // 브라우저 언어(navigator.languages)에 맞는 페이지로 바로 이동한다.
 // 쿠키·저장소·외부 요청은 쓰지 않는다. 맞는 언어가 없거나 스크립트가 꺼져 있으면 아래 목록에서 고른다.
 (function () {
-  var pages = { ko: "ko.html", en: "en.html", ja: "ja.html", id: "id.html", "in": "id.html", vi: "vi.html" };
+  var pages = { ko: "ko.html", en: "en.html", ja: "ja.html", id: "id.html", "in": "id.html", vi: "vi.html",
+    es: "es.html", pt: "pt.html", fr: "fr.html", de: "de.html", it: "it.html", ru: "ru.html", tr: "tr.html",
+    th: "th.html", hi: "hi.html", ar: "ar.html" };
   // 주소가 이미 언어 페이지면 이동하지 않는다. 서버가 없는 언어 파일 대신 이 페이지를 돌려줘도 되풀이 이동이 생기지 않게.
-  if (/\/(ko|en|ja|id|vi)\.html$/i.test(location.pathname)) return;
+  if (/\/(ko|en|ja|id|vi|es|pt|fr|de|it|ru|tr|th|hi|ar|zh-Hans|zh-Hant)\.html$/i.test(location.pathname)) return;
   var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
   for (var i = 0; i < list.length; i++) {
-    var code = String(list[i] || "").toLowerCase().split(/[-_]/)[0];
+    var parts = String(list[i] || "").toLowerCase().split(/[-_]/);
+    var code = parts[0];
+    // 중국어: 번체(Hant, TW/HK/MO) / 그 밖은 간체.
+    if (code === "zh") {
+      var hant = parts.slice(1).some(function (p) { return p === "hant" || p === "tw" || p === "hk" || p === "mo"; });
+      location.replace(hant ? "zh-Hant.html" : "zh-Hans.html");
+      return;
+    }
     if (Object.prototype.hasOwnProperty.call(pages, code)) {
       location.replace(pages[code]);
       return;
@@ -60,7 +69,7 @@ body {
   font-size: 1rem;
   line-height: 1.75;
 }
-:lang(en), :lang(id), :lang(vi) {
+:lang(en), :lang(id), :lang(vi), :lang(es), :lang(pt), :lang(fr), :lang(de), :lang(it), :lang(ru), :lang(tr) {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 }
 :lang(ko) {
@@ -70,6 +79,21 @@ body {
 :lang(ja) {
   font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
   line-break: strict;
+}
+:lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+}
+:lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+:lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, "Thonburi", "Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif;
+}
+:lang(hi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+}
+:lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "Geeza Pro", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
 }
 a { color: var(--link); overflow-wrap: anywhere; }
 a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
@@ -152,6 +176,18 @@ mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: in
     <li><a href="ja.html" hreflang="ja" lang="ja"><strong>日本語</strong><span>ベベのあそびば · プライバシーポリシー</span></a></li>
     <li><a href="id.html" hreflang="id" lang="id"><strong>Bahasa Indonesia</strong><span>Taman Bermain Bebe · Kebijakan privasi</span></a></li>
     <li><a href="vi.html" hreflang="vi" lang="vi"><strong>Tiếng Việt</strong><span>Sân Chơi Bebe · Chính sách quyền riêng tư</span></a></li>
+    <li><a href="es.html" hreflang="es" lang="es"><strong>Español</strong><span>Parque de Juegos Bebe · Política de privacidad</span></a></li>
+    <li><a href="pt.html" hreflang="pt-BR" lang="pt-BR"><strong>Português</strong><span>Parquinho Bebe · Política de privacidade</span></a></li>
+    <li><a href="fr.html" hreflang="fr" lang="fr"><strong>Français</strong><span>Aire de jeux Bebe · Politique de confidentialité</span></a></li>
+    <li><a href="de.html" hreflang="de" lang="de"><strong>Deutsch</strong><span>Bebe-Spielplatz · Datenschutzerklärung</span></a></li>
+    <li><a href="it.html" hreflang="it" lang="it"><strong>Italiano</strong><span>Parco Giochi Bebe · Informativa sulla privacy</span></a></li>
+    <li><a href="ru.html" hreflang="ru" lang="ru"><strong>Русский</strong><span>Площадка Бебе · Политика конфиденциальности</span></a></li>
+    <li><a href="tr.html" hreflang="tr" lang="tr"><strong>Türkçe</strong><span>Bebe Oyun Parkı · Gizlilik politikası</span></a></li>
+    <li><a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans"><strong>简体中文</strong><span>贝贝游乐园 · 隐私政策</span></a></li>
+    <li><a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant"><strong>繁體中文</strong><span>貝貝遊樂園 · 隱私權政策</span></a></li>
+    <li><a href="th.html" hreflang="th" lang="th"><strong>ไทย</strong><span>สนามเด็กเล่นเบเบ้ · นโยบายความเป็นส่วนตัว</span></a></li>
+    <li><a href="hi.html" hreflang="hi" lang="hi"><strong>हिन्दी</strong><span>बेबे का खेलघर · निजता नीति</span></a></li>
+    <li><a href="ar.html" hreflang="ar" lang="ar"><strong>العربية</strong><span>ملعب بيبي · سياسة الخصوصية</span></a></li>
   </ul>
 </main>
 </body>

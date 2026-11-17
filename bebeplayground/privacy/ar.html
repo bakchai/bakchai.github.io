@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية | ملعب بيبي</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi), :lang(es), :lang(pt), :lang(fr), :lang(de), :lang(it), :lang(ru), :lang(tr) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+:lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+}
+:lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+:lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, "Thonburi", "Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif;
+}
+:lang(hi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+}
+:lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "Geeza Pro", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+:lang(ar) {
+  font-family: Tahoma, "Segoe UI", "Noto Sans Arabic", "Noto Naskh Arabic", Roboto, Arial, sans-serif;
+}
+[dir="rtl"] h2 { padding-left: 0; padding-right: 0.7rem; border-left: 0; border-right: 4px solid var(--accent); }
+[dir="rtl"] section ul { padding-left: 0; padding-right: 1.25rem; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">ملعب بيبي</p>
+    <h1>سياسة الخصوصية</h1>
+    <p class="date">تاريخ السريان: <time datetime="2026-10-19">19 أكتوبر 2026</time></p>
+    <nav class="langs" aria-label="اللغات">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+        <li><a href="es.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></li>
+        <li><a href="fr.html" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="it.html" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="ru.html" hreflang="ru" lang="ru">Русский</a></li>
+        <li><a href="tr.html" hreflang="tr" lang="tr">Türkçe</a></li>
+        <li><a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        <li><a href="th.html" hreflang="th" lang="th">ไทย</a></li>
+        <li><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></li>
+        <li><a href="ar.html" hreflang="ar" lang="ar" aria-current="page">العربية</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">هذا التطبيق مخصص للعب بالأصوات للأطفال الصغار. نحن نهتم بخصوصية الأطفال وعائلاتهم. توضح هذه السياسة المعلومات التي يتعامل معها التطبيق.</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. المعلومات الشخصية التي نجمعها</h2>
+    <ul>
+      <li>لا يجمع التطبيق أي معلومات شخصية، مثل الأسماء أو بيانات الاتصال أو الموقع أو الصور أو التسجيلات الصوتية، ولا يرسل أي بيانات إلى خوادمنا.</li>
+      <li>لا توجد حسابات ولا تسجيل دخول.</li>
+      <li>لا يستخدم التطبيق أدوات تحليلات.</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. المعلومات المخزَّنة على هذا الجهاز</h2>
+    <p>تُخزَّن الإعدادات، مثل اللغة وعرض الأسماء بالإنجليزية وقراءة الأسماء بصوت عالٍ ومستوى صوت المؤثرات الصوتية ونوع قفل الوالدين، على هذا الجهاز فقط. وتُحذف عند إلغاء تثبيت التطبيق.</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. المحتوى</h2>
+    <p>الصور ومقاطع الفيديو والأصوات إما مضمَّنة في التطبيق، وإما تُنزَّل عبر Google Play وتُخزَّن على هذا الجهاز. تتولى Google Play عمليات التنزيل؛ ولا نشغّل خوادم محتوى خاصة بنا.</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. قراءة الأسماء بصوت عالٍ (تحويل النص إلى كلام)</h2>
+    <p>لقراءة الأسماء بصوت عالٍ، يستخدم التطبيق محرك تحويل النص إلى كلام (TTS) المثبَّت على هذا الجهاز. لا يمرّر التطبيق إلى هذا المحرك سوى الأسماء المراد قراءتها؛ ولا يسجّل أي بيانات صوتية ولا يخزّنها ولا يرسلها.</p>
+    <p>يوفّر محرك TTS جهازُك أو مطوّرُ المحرك، وتسري سياسته الخاصة على طريقة عمله.</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. الإعلانات</h2>
+    <p>يعرض التطبيق إعلانات بانر من Google AdMob فقط أسفل الشاشة الرئيسية وأسفل شاشة تفاصيل العنصر (في الوضع الرأسي).</p>
+    <ul>
+      <li>يُوسَم كل طلب إعلان بأنه موجَّه إلى الأطفال (TFCD)، ويُضبط الحد الأقصى لتصنيف محتوى الإعلانات على G (لجميع الفئات العمرية)، ولا تُعرض إلا الإعلانات غير المخصصة.</li>
+      <li>يزيل التطبيق إذن المعرّف الإعلاني (AD_ID) ولا يستخدم المعرّف الإعلاني.</li>
+    </ul>
+    <p>ومع ذلك، قد تعالج Google AdMob معلومات الجهاز، مثل عنوان IP، لعرض الإعلانات ومنع الاحتيال.</p>
+    <p>لمزيد من التفاصيل، راجع سياسة خصوصية Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) وكيفية استخدام Google للمعلومات الواردة من المواقع أو التطبيقات التي تستخدم خدماتها (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>).</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. عمليات الشراء داخل التطبيق</h2>
+    <p>لا يتضمن هذا الإصدار من التطبيق أي عمليات شراء داخل التطبيق، ولا يتعامل التطبيق مع أي معلومات دفع.</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. الأطفال</h2>
+    <p>صُمِّم التطبيق للأطفال الصغار، ولا يجمع عن علم أي معلومات شخصية من الأطفال. لا تتوفر الميزات المخصصة للكبار، مثل الإعدادات، إلا بعد تحقق الوالدين.</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. التواصل</h2>
+    <p>للاستفسارات المتعلقة بالخصوصية، يُرجى استخدام وسيلة التواصل مع المطوّر (البريد الإلكتروني) المعروضة في صفحة التطبيق على متجر Google Play.</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. التغييرات على هذه السياسة</h2>
+    <p>إذا تغيّرت هذه السياسة، فستُقدَّم السياسة المحدَّثة من خلال تحديث للتطبيق.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>التطبيق</dt><dd>ملعب بيبي (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>الموقع الإلكتروني للمطوّر</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>البريد الإلكتروني للتواصل</dt><dd>
+      <a href="mailto:bakchai1980@gmail.com">bakchai1980@gmail.com</a>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>

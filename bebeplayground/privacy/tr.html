@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik politikası | Bebe Oyun Parkı</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi), :lang(es), :lang(pt), :lang(fr), :lang(de), :lang(it), :lang(ru), :lang(tr) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+:lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+}
+:lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+:lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, "Thonburi", "Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif;
+}
+:lang(hi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+}
+:lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "Geeza Pro", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">Bebe Oyun Parkı</p>
+    <h1>Gizlilik politikası</h1>
+    <p class="date">Yürürlük tarihi: <time datetime="2026-10-19">19 Ekim 2026</time></p>
+    <nav class="langs" aria-label="Diller">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+        <li><a href="es.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></li>
+        <li><a href="fr.html" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="it.html" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="ru.html" hreflang="ru" lang="ru">Русский</a></li>
+        <li><a href="tr.html" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></li>
+        <li><a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        <li><a href="th.html" hreflang="th" lang="th">ไทย</a></li>
+        <li><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></li>
+        <li><a href="ar.html" hreflang="ar" lang="ar">العربية</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">Bu uygulama, küçük çocuklar için sesli bir oyun uygulamasıdır. Çocukların ve ailelerinin gizliliğine önem veriyoruz. Bu politika, uygulamanın hangi bilgileri işlediğini açıklar.</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. Topladığımız kişisel bilgiler</h2>
+    <ul>
+      <li>Uygulama ad, iletişim bilgileri, konum, fotoğraf veya ses kaydı gibi hiçbir kişisel bilgi toplamaz ve sunucularımıza hiçbir veri göndermez.</li>
+      <li>Hesap ve oturum açma yoktur.</li>
+      <li>Uygulama analiz araçları kullanmaz.</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. Bu cihazda saklanan bilgiler</h2>
+    <p>Dil, İngilizce adları gösterme, adları sesli okuma, ses efektlerinin düzeyi ve ebeveyn kilidi türü gibi ayarlar yalnızca bu cihazda saklanır. Bu ayarlar, uygulamayı kaldırdığınızda silinir.</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. İçerik</h2>
+    <p>Fotoğraflar, videolar ve sesler ya uygulamanın içinde yer alır ya da Google Play üzerinden indirilip bu cihazda saklanır. İndirmeler Google Play tarafından yürütülür; kendimize ait bir içerik sunucusu işletmiyoruz.</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. Adları sesli okuma (metin okuma)</h2>
+    <p>Uygulama, adları sesli okumak için bu cihazda yüklü olan metin okuma (TTS) motorunu kullanır. Uygulama bu motora yalnızca okunacak adları iletir; hiçbir ses verisini kaydetmez, saklamaz veya göndermez.</p>
+    <p>TTS motoru cihazınız ya da motorun geliştiricisi tarafından sağlanır ve motorun çalışma biçimine kendi politikası uygulanır.</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. Reklamlar</h2>
+    <p>Uygulama, Google AdMob banner reklamlarını yalnızca ana ekranın ve öğe ayrıntı ekranının altında (dikey yönde) gösterir.</p>
+    <ul>
+      <li>Her reklam isteği çocuklara yönelik (TFCD) olarak etiketlenir, en yüksek reklam içeriği derecelendirmesi G (genel izleyici) olarak ayarlanır ve yalnızca kişiselleştirilmemiş reklamlar gösterilir.</li>
+      <li>Uygulama, reklam kimliği (AD_ID) iznini kaldırır ve reklam kimliğini kullanmaz.</li>
+    </ul>
+    <p>Bununla birlikte Google AdMob, reklam sunmak ve sahtekârlığı önlemek için IP adresi gibi cihaz bilgilerini işleyebilir.</p>
+    <p>Ayrıntılar için Google Gizlilik Politikası (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) ile Google'ın, hizmetlerini kullanan sitelerden veya uygulamalardan gelen bilgileri nasıl kullandığını anlatan sayfaya (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>) bakın.</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. Uygulama içi satın almalar</h2>
+    <p>Uygulamanın bu sürümünde uygulama içi satın alma yoktur ve uygulama hiçbir ödeme bilgisini işlemez.</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. Çocuklar</h2>
+    <p>Uygulama küçük çocuklar için tasarlanmıştır ve çocuklardan bilerek kişisel bilgi toplamaz. Ayarlar gibi büyüklere yönelik özellikler yalnızca ebeveyn kontrolünden sonra kullanılabilir.</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. İletişim</h2>
+    <p>Gizlilikle ilgili sorularınız için lütfen uygulamanın Google Play Store sayfasında gösterilen geliştirici iletişim bilgisini (e-posta) kullanın.</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. Bu politikadaki değişiklikler</h2>
+    <p>Bu politika değişirse güncellenmiş politika bir uygulama güncellemesiyle sunulur.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>Uygulama</dt><dd>Bebe Oyun Parkı (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>Geliştirici web sitesi</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>İletişim e-postası</dt><dd>
+      <a href="mailto:bakchai1980@gmail.com">bakchai1980@gmail.com</a>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>

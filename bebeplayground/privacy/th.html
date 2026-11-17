@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นโยบายความเป็นส่วนตัว | สนามเด็กเล่นเบเบ้</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi), :lang(es), :lang(pt), :lang(fr), :lang(de), :lang(it), :lang(ru), :lang(tr) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+:lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+}
+:lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+:lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, "Thonburi", "Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif;
+}
+:lang(hi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+}
+:lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "Geeza Pro", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">สนามเด็กเล่นเบเบ้</p>
+    <h1>นโยบายความเป็นส่วนตัว</h1>
+    <p class="date">วันที่มีผลบังคับใช้: <time datetime="2026-10-19">19 ตุลาคม 2569</time></p>
+    <nav class="langs" aria-label="ภาษา">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+        <li><a href="es.html" hreflang="es" lang="es">Español</a></li>
+        <li><a href="pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></li>
+        <li><a href="fr.html" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="it.html" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="ru.html" hreflang="ru" lang="ru">Русский</a></li>
+        <li><a href="tr.html" hreflang="tr" lang="tr">Türkçe</a></li>
+        <li><a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        <li><a href="th.html" hreflang="th" lang="th" aria-current="page">ไทย</a></li>
+        <li><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></li>
+        <li><a href="ar.html" hreflang="ar" lang="ar">العربية</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">แอปนี้เป็นแอปเล่นเสียงสำหรับเด็กเล็ก เราใส่ใจความเป็นส่วนตัวของเด็กและครอบครัว นโยบายนี้อธิบายว่าแอปจัดการข้อมูลอะไรบ้าง</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. ข้อมูลส่วนบุคคลที่เราเก็บรวบรวม</h2>
+    <ul>
+      <li>แอปไม่เก็บรวบรวมข้อมูลส่วนบุคคลใด ๆ เช่น ชื่อ ข้อมูลติดต่อ ตำแหน่ง รูปภาพ หรือเสียงบันทึก และไม่ส่งข้อมูลใด ๆ ไปยังเซิร์ฟเวอร์ของเรา</li>
+      <li>ไม่มีบัญชีผู้ใช้และไม่ต้องลงชื่อเข้าใช้</li>
+      <li>แอปไม่ใช้เครื่องมือวิเคราะห์ข้อมูล</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. ข้อมูลที่จัดเก็บในอุปกรณ์นี้</h2>
+    <p>การตั้งค่าต่าง ๆ เช่น ภาษา การแสดงชื่อภาษาอังกฤษ การอ่านชื่อออกเสียง ระดับเสียงเอฟเฟกต์ และประเภทของล็อกสำหรับผู้ปกครอง จะจัดเก็บไว้ในอุปกรณ์นี้เท่านั้น และจะถูกลบเมื่อคุณถอนการติดตั้งแอป</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. เนื้อหา</h2>
+    <p>รูปภาพ วิดีโอ และเสียง มีอยู่ในแอปอยู่แล้ว หรือดาวน์โหลดผ่าน Google Play แล้วจัดเก็บไว้ในอุปกรณ์นี้ การดาวน์โหลดดำเนินการโดย Google Play เราไม่ได้มีเซิร์ฟเวอร์เนื้อหาของเราเอง</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. การอ่านชื่อออกเสียง (การแปลงข้อความเป็นเสียง)</h2>
+    <p>ในการอ่านชื่อออกเสียง แอปใช้เอนจินแปลงข้อความเป็นเสียง (TTS) ที่ติดตั้งอยู่ในอุปกรณ์นี้ แอปส่งเฉพาะชื่อที่จะอ่านไปยังเอนจินนั้นเท่านั้น และไม่บันทึก จัดเก็บ หรือส่งข้อมูลเสียงใด ๆ</p>
+    <p>เอนจิน TTS จัดให้โดยอุปกรณ์ของคุณหรือผู้พัฒนาเอนจินนั้น และการทำงานของเอนจินเป็นไปตามนโยบายของเอนจินนั้นเอง</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. โฆษณา</h2>
+    <p>แอปแสดงโฆษณาแบนเนอร์ของ Google AdMob เฉพาะที่ด้านล่างของหน้าจอหลักและหน้าจอรายละเอียดของแต่ละรายการ (ในแนวตั้ง) เท่านั้น</p>
+    <ul>
+      <li>คำขอโฆษณาทุกครั้งติดแท็กว่ามุ่งเป้าไปที่เด็ก (TFCD) การจัดประเภทเนื้อหาโฆษณาสูงสุดตั้งไว้ที่ G (ผู้ชมทั่วไป) และแสดงเฉพาะโฆษณาที่ไม่ปรับตามบุคคล</li>
+      <li>แอปนำสิทธิ์รหัสโฆษณา (AD_ID) ออกและไม่ใช้รหัสโฆษณา</li>
+    </ul>
+    <p>อย่างไรก็ตาม Google AdMob อาจยังประมวลผลข้อมูลอุปกรณ์ เช่น ที่อยู่ IP เพื่อแสดงโฆษณาและป้องกันการฉ้อโกง</p>
+    <p>ดูรายละเอียดได้ที่นโยบายความเป็นส่วนตัวของ Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) และวิธีที่ Google ใช้ข้อมูลจากเว็บไซต์หรือแอปที่ใช้บริการของ Google (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>)</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. การซื้อในแอป</h2>
+    <p>แอปเวอร์ชันนี้ไม่มีการซื้อในแอป และแอปไม่ได้จัดการข้อมูลการชำระเงินใด ๆ</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. เด็ก</h2>
+    <p>แอปนี้ออกแบบมาสำหรับเด็กเล็ก และไม่เก็บรวบรวมข้อมูลส่วนบุคคลจากเด็กโดยเจตนา ฟีเจอร์สำหรับผู้ใหญ่ เช่น การตั้งค่า ใช้ได้หลังผ่านการตรวจสอบผู้ปกครองเท่านั้น</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. ติดต่อ</h2>
+    <p>หากมีคำถามเกี่ยวกับความเป็นส่วนตัว โปรดใช้ช่องทางติดต่อผู้พัฒนา (อีเมล) ที่แสดงในหน้าของแอปบน Google Play Store</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. การเปลี่ยนแปลงนโยบายนี้</h2>
+    <p>หากนโยบายนี้มีการเปลี่ยนแปลง เราจะให้นโยบายฉบับปรับปรุงผ่านการอัปเดตแอป</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>แอป</dt><dd>สนามเด็กเล่นเบเบ้ (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>เว็บไซต์ของผู้พัฒนา</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>อีเมลติดต่อ</dt><dd>
+      <a href="mailto:bakchai1980@gmail.com">bakchai1980@gmail.com</a>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>

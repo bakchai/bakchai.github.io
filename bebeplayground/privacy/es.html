@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad | Parque de Juegos Bebe</title>
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #fff8ec;
+  --surface: #fffdf8;
+  --text: #4a3428;
+  --muted: #6f5546;
+  --sky-1: #7dd1f5;
+  --sky-2: #cdeffc;
+  --line: #a9dcf1;
+  --accent: #ff8a5c;
+  --on-accent: #3a1a08;
+  --link: #1565c0;
+  --mark: #ffe08a;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1613;
+    --surface: #241d19;
+    --text: #f4ebe3;
+    --muted: #cbb8aa;
+    --sky-1: #1f5670;
+    --sky-2: #173847;
+    --line: #2d5a6e;
+    --accent: #ff9c75;
+    --link: #8cc4ff;
+    --mark: #6b5310;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+:lang(en), :lang(id), :lang(vi), :lang(es), :lang(pt), :lang(fr), :lang(de), :lang(it), :lang(ru), :lang(tr) {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+:lang(ko) {
+  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", "Noto Sans CJK KR", Roboto, sans-serif;
+  word-break: keep-all;
+}
+:lang(ja) {
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Yu Gothic", Meiryo, "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
+  line-break: strict;
+}
+:lang(zh-Hans) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Noto Sans CJK SC", sans-serif;
+}
+:lang(zh-Hant) {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Microsoft JhengHei", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
+}
+:lang(th) {
+  font-family: -apple-system, BlinkMacSystemFont, "Thonburi", "Leelawadee UI", "Noto Sans Thai", Tahoma, sans-serif;
+}
+:lang(hi) {
+  font-family: -apple-system, BlinkMacSystemFont, "Kohinoor Devanagari", "Nirmala UI", "Noto Sans Devanagari", sans-serif;
+}
+:lang(ar) {
+  font-family: -apple-system, BlinkMacSystemFont, "Geeza Pro", "Segoe UI", "Noto Sans Arabic", Tahoma, sans-serif;
+}
+a { color: var(--link); overflow-wrap: anywhere; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+.wrap { max-width: 46rem; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+.hero {
+  background: linear-gradient(180deg, var(--sky-1), var(--sky-2));
+  border-bottom: 4px solid var(--accent);
+}
+.hero .wrap { padding-top: 1.75rem; padding-bottom: 1.25rem; }
+.app-name { margin: 0; font-weight: 700; font-size: 1.05rem; }
+h1 { margin: 0.1rem 0 0.4rem; font-size: 1.75rem; line-height: 1.3; }
+.date { margin: 0 0 1rem; }
+.langs ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.langs a {
+  display: inline-block;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  line-height: 1.4;
+  text-decoration: none;
+}
+.langs a:hover { border-color: var(--accent); }
+.langs a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); font-weight: 700; }
+main { padding-top: 1.5rem; padding-bottom: 0.5rem; }
+.intro { margin: 0 0 1.5rem; font-size: 1.075rem; }
+section {
+  margin: 0 0 1rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+h2 { margin: 0 0 0.5rem; padding-left: 0.7rem; border-left: 4px solid var(--accent); font-size: 1.15rem; line-height: 1.45; }
+section p { margin: 0.5rem 0; }
+section ul { margin: 0.5rem 0; padding-left: 1.25rem; }
+section li { margin: 0.3rem 0; }
+section li::marker { color: var(--accent); }
+footer { padding-bottom: 2.5rem; }
+footer dl { display: grid; gap: 0.35rem; margin: 0.5rem 0 0; padding-top: 1rem; border-top: 2px dashed var(--line); }
+footer dl div { display: flex; flex-wrap: wrap; gap: 0.1rem 0.6rem; }
+footer dt { font-weight: 700; }
+footer dd { margin: 0; }
+mark { padding: 0 0.2rem; border-radius: 4px; background: var(--mark); color: inherit; }
+@media print {
+  body { background: #fff; color: #000; }
+  .hero { background: none; border-bottom: 1px solid #999; }
+  .langs { display: none; }
+  section { padding: 0; border: 0; }
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="app-name">Parque de Juegos Bebe</p>
+    <h1>Política de privacidad</h1>
+    <p class="date">Fecha de entrada en vigor: <time datetime="2026-10-19">19 de octubre de 2026</time></p>
+    <nav class="langs" aria-label="Idiomas">
+      <ul>
+        <li><a href="ko.html" hreflang="ko" lang="ko">한국어</a></li>
+        <li><a href="en.html" hreflang="en" lang="en">English</a></li>
+        <li><a href="ja.html" hreflang="ja" lang="ja">日本語</a></li>
+        <li><a href="id.html" hreflang="id" lang="id">Bahasa Indonesia</a></li>
+        <li><a href="vi.html" hreflang="vi" lang="vi">Tiếng Việt</a></li>
+        <li><a href="es.html" hreflang="es" lang="es" aria-current="page">Español</a></li>
+        <li><a href="pt.html" hreflang="pt-BR" lang="pt-BR">Português</a></li>
+        <li><a href="fr.html" hreflang="fr" lang="fr">Français</a></li>
+        <li><a href="de.html" hreflang="de" lang="de">Deutsch</a></li>
+        <li><a href="it.html" hreflang="it" lang="it">Italiano</a></li>
+        <li><a href="ru.html" hreflang="ru" lang="ru">Русский</a></li>
+        <li><a href="tr.html" hreflang="tr" lang="tr">Türkçe</a></li>
+        <li><a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+        <li><a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        <li><a href="th.html" hreflang="th" lang="th">ไทย</a></li>
+        <li><a href="hi.html" hreflang="hi" lang="hi">हिन्दी</a></li>
+        <li><a href="ar.html" hreflang="ar" lang="ar">العربية</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <p class="intro">Esta es una app de juego con sonidos para niños pequeños. Nos importa la privacidad de los niños y sus familias. Esta política explica qué información maneja la app.</p>
+  <section id="collect" aria-labelledby="collect-title">
+    <h2 id="collect-title">1. Información personal que recopilamos</h2>
+    <ul>
+      <li>La app no recopila ninguna información personal, como nombres, datos de contacto, ubicación, fotos o grabaciones de voz, y no envía ningún dato a nuestros servidores.</li>
+      <li>No hay cuentas ni inicio de sesión.</li>
+      <li>La app no usa herramientas de análisis.</li>
+    </ul>
+  </section>
+  <section id="device" aria-labelledby="device-title">
+    <h2 id="device-title">2. Información guardada en este dispositivo</h2>
+    <p>La configuración, como el idioma, mostrar los nombres en inglés, leer los nombres en voz alta, el volumen de los efectos de sonido y el tipo de bloqueo parental, se guarda solo en este dispositivo. Se borra cuando desinstalas la app.</p>
+  </section>
+  <section id="content" aria-labelledby="content-title">
+    <h2 id="content-title">3. Contenido</h2>
+    <p>Las fotos, los videos y los sonidos vienen incluidos en la app o se descargan a través de Google Play y se guardan en este dispositivo. Las descargas las gestiona Google Play; no tenemos servidores de contenido propios.</p>
+  </section>
+  <section id="tts" aria-labelledby="tts-title">
+    <h2 id="tts-title">4. Lectura de nombres en voz alta (texto a voz)</h2>
+    <p>Para leer los nombres en voz alta, la app usa el motor de texto a voz (TTS) instalado en este dispositivo. La app solo le pasa a ese motor los nombres que se van a leer; no graba, guarda ni envía ningún dato de voz.</p>
+    <p>El motor de TTS lo proporciona tu dispositivo o el desarrollador del motor, y su funcionamiento se rige por su propia política.</p>
+  </section>
+  <section id="ads" aria-labelledby="ads-title">
+    <h2 id="ads-title">5. Anuncios</h2>
+    <p>La app muestra anuncios de banner de Google AdMob solo en la parte inferior de la pantalla de inicio y de la pantalla de detalle de cada elemento (en orientación vertical).</p>
+    <ul>
+      <li>Todas las solicitudes de anuncios se marcan como dirigidas a niños (TFCD), la clasificación máxima del contenido de los anuncios es G (todos los públicos) y solo se muestran anuncios no personalizados.</li>
+      <li>La app elimina el permiso del ID de publicidad (AD_ID) y no usa el ID de publicidad.</li>
+    </ul>
+    <p>Aun así, Google AdMob puede procesar información del dispositivo, como la dirección IP, para mostrar anuncios y prevenir fraudes.</p>
+    <p>Para más detalles, consulta la Política de Privacidad de Google (<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>) y cómo usa Google la información de los sitios o apps que utilizan sus servicios (<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a>).</p>
+  </section>
+  <section id="purchase" aria-labelledby="purchase-title">
+    <h2 id="purchase-title">6. Compras dentro de la app</h2>
+    <p>Esta versión de la app no tiene compras dentro de la app, y la app no maneja ninguna información de pago.</p>
+  </section>
+  <section id="children" aria-labelledby="children-title">
+    <h2 id="children-title">7. Niños</h2>
+    <p>La app está diseñada para niños pequeños y no recopila a sabiendas información personal de niños. Las funciones para adultos, como la configuración, solo están disponibles después de un control para padres.</p>
+  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">8. Contacto</h2>
+    <p>Si tienes preguntas sobre privacidad, usa el contacto del desarrollador (correo electrónico) que aparece en la página de la app en Google Play Store.</p>
+  </section>
+  <section id="changes" aria-labelledby="changes-title">
+    <h2 id="changes-title">9. Cambios en esta política</h2>
+    <p>Si esta política cambia, la versión actualizada se proporcionará mediante una actualización de la app.</p>
+  </section>
+</main>
+<footer class="wrap">
+  <dl>
+    <div><dt>App</dt><dd>Parque de Juegos Bebe (com.bakchai.bebeplayground)</dd></div>
+    <div><dt>Sitio web del desarrollador</dt><dd><a href="https://bakchai.com">https://bakchai.com</a></dd></div>
+    <div><dt>Correo electrónico de contacto</dt><dd>
+      <a href="mailto:bakchai1980@gmail.com">bakchai1980@gmail.com</a>
+    </dd></div>
+  </dl>
+</footer>
+</body>
+</html>
